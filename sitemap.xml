@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://fengniture.com/</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://fengniture.com/img/room-living.jpg</image:loc><image:title>Fengniture living room — solid wood sofa and round coffee table</image:title></image:image>
+    <image:image><image:loc>https://fengniture.com/img/room-dining.jpg</image:loc><image:title>Fengniture dining table and chairs in walnut</image:title></image:image>
+    <image:image><image:loc>https://fengniture.com/img/room-kitchen.jpg</image:loc><image:title>Fengniture kitchen island and stools</image:title></image:image>
+    <image:image><image:loc>https://fengniture.com/img/room-bedroom.jpg</image:loc><image:title>Fengniture platform bed and bench</image:title></image:image>
+    <image:image><image:loc>https://fengniture.com/img/room-chair.jpg</image:loc><image:title>Fengniture solid wood armchair</image:title></image:image>
+  </url>
+</urlset>
