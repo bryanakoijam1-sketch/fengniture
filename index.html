@@ -22,7 +22,7 @@
   --plaster:#F3E7D5; --plaster-2:#E9D9C1; --plaster-3:#DCC8AA;
   --ink:#2B1911; --ink-2:#5A3D2C; --muted:#8B6B55;
   --walnut:#6E4126; --walnut-deep:#3E2415; --walnut-light:#9C6A45;
-  --wine:#7B1E3D; --wine-deep:#5A1229; --gold:#C9A45C;
+  --wine:#5A2140; --wine-deep:#3E1429; --gold:#C9A45C;
   --card:#F8EFE1; --line:rgba(62,36,21,.14); --shadow:rgba(62,36,21,.22);
   --img-tint:transparent;
   --display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
@@ -33,7 +33,7 @@
   --plaster:#1C120E; --plaster-2:#241813; --plaster-3:#2F2018;
   --ink:#F0E3CF; --ink-2:#D5C1A6; --muted:#A88B72;
   --walnut:#8A5634; --walnut-deep:#B37A52; --walnut-light:#6E4126;
-  --wine:#B0375F; --wine-deep:#8A2449; --gold:#D9B66E;
+  --wine:#7A4263; --wine-deep:#5B2C47; --gold:#D9B66E;
   --card:#271A14; --line:rgba(240,227,207,.14); --shadow:rgba(0,0,0,.5);
   --img-tint:rgba(28,18,14,.12);
   color-scheme:dark }}
@@ -41,7 +41,7 @@
   --plaster:#1C120E; --plaster-2:#241813; --plaster-3:#2F2018;
   --ink:#F0E3CF; --ink-2:#D5C1A6; --muted:#A88B72;
   --walnut:#8A5634; --walnut-deep:#B37A52; --walnut-light:#6E4126;
-  --wine:#B0375F; --wine-deep:#8A2449; --gold:#D9B66E;
+  --wine:#7A4263; --wine-deep:#5B2C47; --gold:#D9B66E;
   --card:#271A14; --line:rgba(240,227,207,.14); --shadow:rgba(0,0,0,.5);
   --img-tint:rgba(28,18,14,.12);
   color-scheme:dark }
@@ -529,12 +529,12 @@ details.co .co-body b{display:block;font-weight:400;letter-spacing:.14em;text-tr
   const form=document.getElementById('enqForm');
   form.addEventListener('submit',e=>{e.preventDefault();
     const name=form.name.value.trim(),contact=form.contact.value.trim();
-    if(!name||!contact){[form.name,form.contact].forEach(f=>{if(!f.value.trim()){f.style.borderColor='#E07A96';f.addEventListener('input',()=>f.style.borderColor='',{once:true});}});(name?form.contact:form.name).focus();return;}
+    if(!name||!contact){[form.name,form.contact].forEach(f=>{if(!f.value.trim()){f.style.borderColor='#B5607A';f.addEventListener('input',()=>f.style.borderColor='',{once:true});}});(name?form.contact:form.name).focus();return;}
     const btn=form.querySelector('button[type=submit]');btn.disabled=true;btn.style.opacity='.6';
     const data=new URLSearchParams(new FormData(form)).toString();
     fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:data})
       .then(r=>{if(!r.ok)throw new Error(r.status);form.classList.add('is-sent');form.querySelector('.sent').textContent=`Thank you, ${name.split(' ')[0]}. Your enquiry has been sent. We reply within two working days.`;})
-      .catch(()=>{btn.disabled=false;btn.style.opacity='';form.querySelector('.note').textContent='Could not send just now. Please email dicarolinmangang@gmail.com or call +91 70054 46146.';form.querySelector('.note').style.color='#E07A96';});
+      .catch(()=>{btn.disabled=false;btn.style.opacity='';form.querySelector('.note').textContent='Could not send just now. Please email dicarolinmangang@gmail.com or call +91 70054 46146.';form.querySelector('.note').style.color='#B5607A';});
   });
 
   /* gentle rise-in on scroll (content is visible at rest) */
