@@ -9,9 +9,40 @@
 <meta property="og:description" content="Solid hardwood, quiet lines, rooms that breathe. Modern furniture made in Manipur.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="/img/hero-living.jpg">
-<meta name="theme-color" content="#F3E7D5">
+<meta name="theme-color" content="#FFFFFF">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}
+/* ---------- black / walnut / white, minimalist ---------- */
+.gate-sun,.gate-leaf{display:none}
+.gate-ring{background:conic-gradient(from 210deg,var(--walnut-light),var(--walnut) 30%,var(--walnut-deep) 60%,var(--walnut) 85%,var(--walnut-light));box-shadow:0 24px 50px -28px var(--shadow)}
+.gate-ring::before{background:var(--plaster);box-shadow:inset 0 0 0 1px var(--line)}
+.gate-ring::after{background:var(--plaster)}
+.gate-img{inset:7.5%;box-shadow:inset 0 0 0 1px var(--line)}
+.grain{opacity:.18}
+.spot{opacity:.5}
+.strip{background:var(--plaster)}
+.strip-track span{font-style:normal;font-family:var(--body);font-weight:400;font-size:.74rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.strip-track span::after{background:var(--walnut)}
+.card{border-radius:6px;box-shadow:none}
+.card.is-hover{box-shadow:0 30px 60px -36px var(--shadow)}
+.card .glare{background:radial-gradient(420px circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.35),transparent 60%)}
+.card .tag{color:var(--muted);border-color:var(--line)}
+.room-stage{border-radius:4px;border:1px solid var(--line);box-shadow:none;border-width:1px;padding:0}
+.room-stage{box-shadow:inset 0 0 0 0 transparent}
+.lens{border-radius:6px}
+.enquire{background:#121110;color:#F4F0EA}
+.enquire::before{border-color:var(--walnut);opacity:.35;border-width:1px}
+:root[data-theme="dark"] .enquire{background:#000;border-top:1px solid var(--line)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .enquire{background:#000;border-top:1px solid var(--line)}}
+.enquire .eyebrow,.enquire .eyebrow::before{color:#B07A54;background-color:transparent}
+.enquire .eyebrow::before{background:#B07A54}
+.enquire .btn{border-color:#B07A54}.enquire .btn::before{background:#B07A54}.enquire .btn:hover{color:#121110}
+form{border-radius:6px}
+.btn{border-radius:2px}
+.gate-caption{border-radius:2px}
+.copy{border-radius:2px}
+details.co summary{color:var(--muted)}
+</style>
 </head>
 <body>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,31 +50,31 @@
 <style>
 /* Layout: a moon-gate hero (walnut ring, wine inner band) framing a living room, then a tilt-card collection, a room switcher, a cursor-lens craft panel, and an enquiry form. Company details sit folded in the footer. */
 :root{
-  --plaster:#F3E7D5; --plaster-2:#E9D9C1; --plaster-3:#DCC8AA;
-  --ink:#2B1911; --ink-2:#5A3D2C; --muted:#8B6B55;
-  --walnut:#6E4126; --walnut-deep:#3E2415; --walnut-light:#9C6A45;
-  --wine:#5A2140; --wine-deep:#3E1429; --gold:#C9A45C;
-  --card:#F8EFE1; --line:rgba(62,36,21,.14); --shadow:rgba(62,36,21,.22);
+  --plaster:#FFFFFF; --plaster-2:#F6F2ED; --plaster-3:#EBE4DB;
+  --ink:#121110; --ink-2:#3B312A; --muted:#7D6E62;
+  --walnut:#6B4328; --walnut-deep:#3A2416; --walnut-light:#9A6B48;
+  --wine:#6B4328; --wine-deep:#4A2D1A; --gold:#9A6B48;
+  --card:#FFFFFF; --line:rgba(18,17,16,.12); --shadow:rgba(18,17,16,.18);
   --img-tint:transparent;
   --display:"Cormorant Garamond",Georgia,"Times New Roman",serif;
   --mark:"Cinzel","Cormorant Garamond",Georgia,serif;
   --body:"Jost","Helvetica Neue",Arial,sans-serif;
 }
 @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
-  --plaster:#1C120E; --plaster-2:#241813; --plaster-3:#2F2018;
-  --ink:#F0E3CF; --ink-2:#D5C1A6; --muted:#A88B72;
-  --walnut:#8A5634; --walnut-deep:#B37A52; --walnut-light:#6E4126;
-  --wine:#7A4263; --wine-deep:#5B2C47; --gold:#D9B66E;
-  --card:#271A14; --line:rgba(240,227,207,.14); --shadow:rgba(0,0,0,.5);
-  --img-tint:rgba(28,18,14,.12);
+  --plaster:#0E0C0B; --plaster-2:#161311; --plaster-3:#211B17;
+  --ink:#F4F0EA; --ink-2:#CFC4B8; --muted:#8E7F72;
+  --walnut:#8C5A38; --walnut-deep:#B07A54; --walnut-light:#6B4328;
+  --wine:#8C5A38; --wine-deep:#6B4328; --gold:#B07A54;
+  --card:#151210; --line:rgba(244,240,234,.12); --shadow:rgba(0,0,0,.55);
+  --img-tint:rgba(14,12,11,.10);
   color-scheme:dark }}
 :root[data-theme="dark"]{
-  --plaster:#1C120E; --plaster-2:#241813; --plaster-3:#2F2018;
-  --ink:#F0E3CF; --ink-2:#D5C1A6; --muted:#A88B72;
-  --walnut:#8A5634; --walnut-deep:#B37A52; --walnut-light:#6E4126;
-  --wine:#7A4263; --wine-deep:#5B2C47; --gold:#D9B66E;
-  --card:#271A14; --line:rgba(240,227,207,.14); --shadow:rgba(0,0,0,.5);
-  --img-tint:rgba(28,18,14,.12);
+  --plaster:#0E0C0B; --plaster-2:#161311; --plaster-3:#211B17;
+  --ink:#F4F0EA; --ink-2:#CFC4B8; --muted:#8E7F72;
+  --walnut:#8C5A38; --walnut-deep:#B07A54; --walnut-light:#6B4328;
+  --wine:#8C5A38; --wine-deep:#6B4328; --gold:#B07A54;
+  --card:#151210; --line:rgba(244,240,234,.12); --shadow:rgba(0,0,0,.55);
+  --img-tint:rgba(14,12,11,.10);
   color-scheme:dark }
 
 *{box-sizing:border-box}
@@ -529,12 +560,12 @@ details.co .co-body b{display:block;font-weight:400;letter-spacing:.14em;text-tr
   const form=document.getElementById('enqForm');
   form.addEventListener('submit',e=>{e.preventDefault();
     const name=form.name.value.trim(),contact=form.contact.value.trim();
-    if(!name||!contact){[form.name,form.contact].forEach(f=>{if(!f.value.trim()){f.style.borderColor='#B5607A';f.addEventListener('input',()=>f.style.borderColor='',{once:true});}});(name?form.contact:form.name).focus();return;}
+    if(!name||!contact){[form.name,form.contact].forEach(f=>{if(!f.value.trim()){f.style.borderColor='#A64B3F';f.addEventListener('input',()=>f.style.borderColor='',{once:true});}});(name?form.contact:form.name).focus();return;}
     const btn=form.querySelector('button[type=submit]');btn.disabled=true;btn.style.opacity='.6';
     const data=new URLSearchParams(new FormData(form)).toString();
     fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:data})
       .then(r=>{if(!r.ok)throw new Error(r.status);form.classList.add('is-sent');form.querySelector('.sent').textContent=`Thank you, ${name.split(' ')[0]}. Your enquiry has been sent. We reply within two working days.`;})
-      .catch(()=>{btn.disabled=false;btn.style.opacity='';form.querySelector('.note').textContent='Could not send just now. Please email dicarolinmangang@gmail.com or call +91 70054 46146.';form.querySelector('.note').style.color='#B5607A';});
+      .catch(()=>{btn.disabled=false;btn.style.opacity='';form.querySelector('.note').textContent='Could not send just now. Please email dicarolinmangang@gmail.com or call +91 70054 46146.';form.querySelector('.note').style.color='#A64B3F';});
   });
 
   /* gentle rise-in on scroll (content is visible at rest) */
