@@ -336,7 +336,7 @@ details.co .co-body b{display:block;font-weight:400;letter-spacing:.14em;text-tr
         <span class="k">Enquire</span>
         <h2>Tell us the room.</h2>
         <div class="contact">
-          <div><span class="lab">Email</span><a href="mailto:dicarolinmangang@gmail.com">dicarolinmangang@gmail.com</a><button class="copy" type="button" data-copy="dicarolinmangang@gmail.com">Copy</button></div>
+          <div><span class="lab">Email</span><a href="mailto:chisel@fengniture.com">chisel@fengniture.com</a><button class="copy" type="button" data-copy="chisel@fengniture.com">Copy</button></div>
           <div><span class="lab">Phone</span><a href="tel:+917005446146">+91 70054 46146</a><button class="copy" type="button" data-copy="+91 70054 46146">Copy</button></div>
           <div><span class="lab">Studio</span><span>Kakching, Manipur</span></div>
         </div>
@@ -452,7 +452,7 @@ details.co .co-body b{display:block;font-weight:400;letter-spacing:.14em;text-tr
     const btn=form.querySelector('button[type=submit]');btn.disabled=true;btn.style.opacity='.6';
     fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(new FormData(form)).toString()})
       .then(r=>{if(!r.ok)throw new Error(r.status);form.classList.add('is-sent');form.querySelector('.sent').textContent=`Thank you, ${name.split(' ')[0]}. Sent. We reply within two working days.`;})
-      .catch(()=>{btn.disabled=false;btn.style.opacity='';const n=form.querySelector('.note');n.textContent='Could not send. Email dicarolinmangang@gmail.com or call +91 70054 46146.';n.style.opacity='1';});
+      .catch(()=>{btn.disabled=false;btn.style.opacity='';const n=form.querySelector('.note');n.textContent='Could not send. Email chisel@fengniture.com or call +91 70054 46146.';n.style.opacity='1';});
   });
 
   /* rise-in */
